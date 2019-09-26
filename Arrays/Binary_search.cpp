@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
 	/* code */
-	int n;			
-	cin>>n;				//Input length of array = n 
+	int n;
+	cin>>n;				//Input length of array = n
 	int ar[n];			//Declare an array 'ar' of length n
 
 	// Accepting values for the array
@@ -18,11 +18,11 @@ int main()
 	sort(ar,ar+n);      //Sorting the array
 
 	//Binary search
-	int left, right, mid;
+	int left, right, mid, flag=0;
 	left = 0;
 	right = n;
 
-	while(r>l){
+	while(right >= left){
 
 		mid=(left+right)/2;
 
@@ -34,8 +34,15 @@ int main()
 			left = mid+1 ;
 		}
 		else {
-			cout<<"Element found at index = "<<mid;
+			flag=1;
+			break;
 		}
 	}
+	if(flag == 1){
+		cout<<"Element found at "<<mid;
+	}
+	else
+		cout<<"Element not found";
+
 	return 0;
 }

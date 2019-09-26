@@ -12,9 +12,10 @@ int main()
 		cin>>ar[i];
 	}
 
-	int min_index=0;					//initializing index of minimum element as 0
+	int min_index;					
 	for(int i=0;i<n;i++){
-		for(int j=i+1;j<n;j++)
+		min_index=i;						
+		for(int j=i;j<n;j++)
 		{
 			if(ar[j]<ar[min_index]){		//comparing value at j-th index and min_index
 				min_index=j;			

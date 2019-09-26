@@ -16,14 +16,16 @@ int main()
 	cin>>element;
 
 	//linear search
-
-	for(int i=0;i<n;i++){
+	int i;
+	for(i=0;i<n;i++){
 		if(ar[i] == element)
 		{
 			cout<<"element found at index = "<<i;
 			break;
 		} 
 	}
+	if(i==n)
+		cout<<"Not found";
 
 	return 0;
 }
