@@ -49,6 +49,9 @@ int main()
 	reverse(v.begin(), v.end());  			//Reverse the vector
 	disp(v);
 
+	v.erase();
+	if(v.empty())
+		cout<<"Vector is Empty!"<<endl;
 	return 0;
 
 }
