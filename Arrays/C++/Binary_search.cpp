@@ -22,7 +22,7 @@ int main()
 	left = 0;
 	right = n;
 
-	while(right >= left){
+	while(left <= rights){
 
 		mid=(left+right)/2;
 
