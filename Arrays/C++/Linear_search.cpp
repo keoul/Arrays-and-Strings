@@ -4,6 +4,10 @@ using namespace std;
 int main()
 {
 	/* code */
+
+	int a[]={1,2,3,4,5};
+	int a[5]={0};
+
 	int n;			
 	cin>>n;				//Input length of array = n 
 	int ar[n];			//Declare an array 'ar' of length n
