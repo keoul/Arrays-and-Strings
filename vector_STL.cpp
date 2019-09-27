@@ -21,7 +21,7 @@ int main()
 	cout<<"Max Element is: "<<*max_element(v.begin(), v.end())<<endl; //Max Element
 
 	cout<<"Min Element is: "<<*min_element(v.begin(), v.end())<<endl; // Min Element
-	
+
 	cout<<"The Sorted Vector is"<<endl;
 	sort(v.begin(), v.end()); 				//Sorting
 	disp(v);								// Display Method
@@ -39,7 +39,7 @@ int main()
 	int sum = accumulate(v.begin(), v.end(),0); 		//Sums the vector
 	cout<<"The sum is "<<sum<<endl;
 
-	cout<<"Find Occurences of	";
+	cout<<"Find Occurences of :"<<endl;
 	int k;
 	cin>>k;
 	int freq = count(v.begin(), v.end(),k);
@@ -49,7 +49,7 @@ int main()
 	reverse(v.begin(), v.end());  			//Reverse the vector
 	disp(v);
 
-	v.erase();
+	v.erase(v.begin());
 	if(v.empty())
 		cout<<"Vector is Empty!"<<endl;
 	return 0;
